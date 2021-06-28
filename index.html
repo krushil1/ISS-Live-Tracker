@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS 📡 🛰</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center img-responsive.mobile">
+        <h9>Sorry, but the ISS 📡 🛰 data feed isn't available on phone screen, please open it on desktop screen!</h9>
+    </div>
+    <div>
+        <h4 id="mobile" class="title img-responsive">ISS Real-Time Data Feed</h4>
+        <p id="mobile" class="subtitle img-responsive">Crafted By Krushil Amrutiya</p>
+        <div class="cantOpen"></div>
+        <div style="width: 100%;" id="issMap" class="img-responsive"></div>
+        <div class="moreStats">
+            <div class="sqaure img-responsive">
+                <iframe width="100%" 
+                    height="100%" 
+                    src="https://www.ustream.tv/embed/17074538?autoplay=1&mute=1"
+                    scrolling="no" 
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </div>
+                <h4 class="people img-responsive">Total astronauts onboard: <span id="people"></span></h4>
+                <br>
+                <h4 class="coordinate img-responsive"> <u>Current Lat:</u> <span id="lat"></span></h4>
+                <h4 class="coordinate img-responsive"><u>Current Long:</u> <span id="long"></span></h4>
+            <br>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
