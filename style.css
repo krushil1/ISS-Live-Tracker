@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+#issMap { 
+    height: 60vh; 
+    border-radius: 6px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(48, 75, 90);
+    font-size: 4vh;
+    margin-top: -12px;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(105, 131, 144);
+    font-weight: 700;
+    margin-top: -20px;
+    
+}
+
+body {
+    background: rgb(19, 35, 45);
+    /*  
+    
+    rgb(244, 246, 248)*/
+}
+
+.moreStats {
+    display: flex;
+}
+
+.sqaure {
+    margin-top: 2.5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 12rem;
+    width: 50%;
+    background-color: rgb(65, 65, 65);
+    border-radius: 5px;
+}
+
+
+.people {
+    color: green;
+    font-size: 2.5vh;
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 5%;  
+} 
+
+.coordinate {
+    color: green;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.3vh;
+    padding-left: 5%;
+}
+ 
+
+.img-responsive.mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-device-width: 480px) {
+    .img-responsive {
+      display: none;
+    }
+    .img-responsive.mobile {
+      display: block;
+    }
+  }
+
+
+.center{
+    position:absolute;
+    display:block;
+    left:50%;
+    top:50%;
+    color: white;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+/* 
