@@ -25,7 +25,7 @@ const mymap = L.map('issMap').setView([0, 0], 1.3);
             document.getElementById('long').innerHTML = longitude;
         }
 
-        const api1_url = 'http://api.open-notify.org/astros';
+        const api1_url = 'http://api.open-notify.org/astros.json';
         async function getPeople() {
             const response = await fetch(api1_url);
             const data = await response.json();
